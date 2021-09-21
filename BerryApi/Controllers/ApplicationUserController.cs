@@ -47,10 +47,10 @@ namespace BerryApi.Controllers
                 var result = await _userManager.CreateAsync(applicationUser, model.Password);
                 return Ok(result);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
-                throw ex;
+                throw;
             }
         }
 
